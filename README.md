@@ -4,6 +4,9 @@ A full-stack image upload application built with React and Node.js/Express.
 
 ![Light Mode](https://github.com/user-attachments/assets/17ac1db6-c363-4478-a69f-2cbd8bb5d689)
 ![Dark Mode](https://github.com/user-attachments/assets/87207d9c-d2fd-400f-9b39-5696de21479c)
+![Upload Immage](https://github.com/user-attachments/assets/0a641272-8603-4327-ab37-824de7f757e8)
+
+
 
 ## Features
 
