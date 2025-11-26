@@ -29,6 +29,15 @@ export default {
         'sm': ['0.75rem', { lineHeight: '1.25' }],
         'base': ['0.875rem', { lineHeight: '1.5' }],
       },
+      keyframes: {
+        progress: {
+          '0%': { left: '-33%' },
+          '100%': { left: '100%' },
+        },
+      },
+      animation: {
+        progress: 'progress 1.5s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
