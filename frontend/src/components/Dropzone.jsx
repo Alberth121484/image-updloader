@@ -37,7 +37,9 @@ function Dropzone({ onFileSelect, disabled }) {
     <div
       {...getRootProps()}
       className={`
-        w-full max-w-[540px] min-h-[340px] 
+        w-full max-w-[calc(100vw-2rem)] sm:max-w-[480px] md:max-w-[540px] lg:max-w-[600px]
+        min-h-[280px] sm:min-h-[320px] md:min-h-[340px]
+        px-4 sm:px-8 py-8 sm:py-12
         flex flex-col items-center justify-center
         border-2 border-dashed rounded-xl
         cursor-pointer transition-all duration-200

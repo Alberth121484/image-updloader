@@ -4,7 +4,7 @@ function Header() {
   const { isDark, toggleTheme } = useTheme();
 
   return (
-    <header className="w-full px-6 py-4 flex items-center justify-between border-b border-light-border dark:border-dark-border bg-light-card dark:bg-dark-bg">
+    <header className="w-full px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between border-b border-light-border dark:border-dark-border bg-light-card dark:bg-dark-bg">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <img 

@@ -65,8 +65,8 @@ function App() {
 
         {/* Error State */}
         {isError && (
-          <div className="w-full max-w-[540px] p-8 rounded-xl bg-light-card dark:bg-dark-card text-center">
-            <p className="text-red-500 mb-4">{error}</p>
+          <div className="w-full max-w-[calc(100vw-2rem)] sm:max-w-[480px] md:max-w-[540px] p-6 sm:p-8 rounded-xl bg-light-card dark:bg-dark-card text-center">
+            <p className="text-red-500 mb-4 text-sm sm:text-base">{error}</p>
             <button
               onClick={reset}
               className="px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90"

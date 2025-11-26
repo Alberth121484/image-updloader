@@ -37,18 +37,18 @@ function ImagePreview({ imageUrl, filename, onDownload }) {
   };
 
   return (
-    <div className="w-full max-w-[540px] flex flex-col items-center">
+    <div className="w-full max-w-[calc(100vw-2rem)] sm:max-w-[480px] md:max-w-[540px] lg:max-w-[600px] flex flex-col items-center">
       {/* Image Container */}
       <div className="w-full rounded-xl overflow-hidden shadow-lg bg-light-card dark:bg-dark-card">
         <img 
           src={imageUrl} 
           alt="Uploaded preview"
-          className="w-full h-auto object-contain max-h-[400px]"
+          className="w-full h-auto object-contain max-h-[300px] sm:max-h-[350px] md:max-h-[400px]"
         />
       </div>
 
       {/* Action Buttons */}
-      <div className="flex gap-3 mt-6">
+      <div className="flex gap-2 sm:gap-3 mt-4 sm:mt-6">
         {/* Share Button */}
         <button
           onClick={handleShare}

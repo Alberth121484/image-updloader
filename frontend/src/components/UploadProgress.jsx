@@ -2,7 +2,7 @@ function UploadProgress({ progress }) {
   const isIndeterminate = progress === undefined || progress === null;
 
   return (
-    <div className="w-full max-w-[540px] p-8 rounded-xl bg-light-card dark:bg-dark-card shadow-sm">
+    <div className="w-full max-w-[calc(100vw-2rem)] sm:max-w-[480px] md:max-w-[540px] lg:max-w-[600px] p-6 sm:p-8 rounded-xl bg-light-card dark:bg-dark-card shadow-sm">
       {/* Text */}
       <p className="text-base text-center mb-6">
         <span className="font-medium text-text-dark dark:text-text-light">Uploading</span>
