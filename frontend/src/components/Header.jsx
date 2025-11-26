@@ -1,4 +1,8 @@
-function Header({ isDark, onToggleTheme }) {
+import { useTheme } from '../context';
+
+function Header() {
+  const { isDark, toggleTheme } = useTheme();
+
   return (
     <header className="w-full px-6 py-4 flex items-center justify-between border-b border-light-border dark:border-dark-border bg-light-card dark:bg-dark-bg">
       {/* Logo */}
@@ -15,7 +19,7 @@ function Header({ isDark, onToggleTheme }) {
 
       {/* Theme Toggle Button */}
       <button
-        onClick={onToggleTheme}
+        onClick={toggleTheme}
         className="w-10 h-10 flex items-center justify-center rounded-lg border border-light-border dark:border-dark-border hover:bg-gray-100 dark:hover:bg-dark-card transition-colors"
         aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
       >
