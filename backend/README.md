@@ -56,3 +56,18 @@ npm start
 
 - **Allowed types:** JPG, PNG, GIF
 - **Max file size:** 2MB
+
+## Deployment (Vercel)
+
+1. Install Vercel CLI
+```bash
+npm i -g vercel
+```
+
+2. Deploy
+```bash
+vercel
+```
+
+3. Set environment variables in Vercel dashboard:
+   - `FRONTEND_URL` - Your frontend URL for CORS

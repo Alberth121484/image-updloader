@@ -66,3 +66,23 @@ npm run preview
 ## Development
 
 The development server runs on `http://localhost:5173` with a proxy configured for API calls to `http://localhost:3001`.
+
+## Deployment (Netlify)
+
+1. Build the project
+```bash
+npm run build
+```
+
+2. Deploy to Netlify:
+   - Connect your GitHub repository, or
+   - Drag and drop the `dist` folder to Netlify
+
+3. Set environment variables:
+   - `VITE_API_URL` - Your backend API URL (e.g., `https://your-backend.vercel.app/api`)
+
+## Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `VITE_API_URL` | Backend API URL (uses `/api` proxy in development) |
