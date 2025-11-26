@@ -5,6 +5,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import multer from 'multer';
 import uploadRoutes from './routes/upload.js';
+import downloadRoutes from './routes/download.js';
 
 // Load environment variables
 dotenv.config();
@@ -24,6 +25,7 @@ app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 // Routes
 app.use('/api/upload', uploadRoutes);
+app.use('/api/download', downloadRoutes);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
