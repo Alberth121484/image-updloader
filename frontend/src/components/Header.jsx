@@ -20,13 +20,14 @@ function Header() {
       {/* Theme Toggle Button */}
       <button
         onClick={toggleTheme}
-        className="w-10 h-10 flex items-center justify-center rounded-lg border border-light-border dark:border-dark-border hover:bg-gray-100 dark:hover:bg-dark-card transition-colors"
+        className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg border border-light-border dark:border-dark-border hover:bg-gray-100 dark:hover:bg-dark-card active:scale-95 transition-all duration-200"
         aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+        title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
       >
         {isDark ? (
-          <img src="/assets/Sun_fill.svg" alt="Light mode" className="w-5 h-5" />
+          <img src="/assets/Sun_fill.svg" alt="" className="w-5 h-5" />
         ) : (
-          <img src="/assets/Moon_fill.svg" alt="Dark mode" className="w-5 h-5" />
+          <img src="/assets/Moon_fill.svg" alt="" className="w-5 h-5" />
         )}
       </button>
     </header>

@@ -4,7 +4,7 @@ function UploadProgress({ progress }) {
   return (
     <div className="w-full max-w-[calc(100vw-2rem)] sm:max-w-[480px] md:max-w-[540px] lg:max-w-[600px] p-6 sm:p-8 rounded-xl bg-light-card dark:bg-dark-card shadow-sm">
       {/* Text */}
-      <p className="text-base text-center mb-6">
+      <p className="text-sm sm:text-base text-center mb-4 sm:mb-6">
         <span className="font-medium text-text-dark dark:text-text-light">Uploading</span>
         <span className="font-light text-text-muted">, please wait..</span>
       </p>

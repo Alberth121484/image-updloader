@@ -69,7 +69,7 @@ function App() {
             <p className="text-red-500 mb-4 text-sm sm:text-base">{error}</p>
             <button
               onClick={reset}
-              className="px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90"
+              className="btn-primary"
             >
               Try again
             </button>

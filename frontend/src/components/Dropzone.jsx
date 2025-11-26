@@ -65,15 +65,15 @@ function Dropzone({ onFileSelect, disabled }) {
       </div>
 
       {/* Main Text */}
-      <p className="text-base text-text-dark dark:text-text-light font-light">
+      <p className="text-sm sm:text-base text-text-dark dark:text-text-light font-light text-center px-2">
         Drag & drop a file or{' '}
-        <span className="text-primary font-medium cursor-pointer hover:underline">
+        <span className="text-primary font-medium hover:underline">
           browse files
         </span>
       </p>
 
       {/* Subtitle */}
-      <p className="text-sm text-text-muted mt-2 font-light">
+      <p className="text-xs sm:text-sm text-text-muted mt-2 font-light text-center">
         JPG, PNG or GIF - Max file size 2MB
       </p>
     </div>

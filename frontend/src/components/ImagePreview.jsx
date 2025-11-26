@@ -52,12 +52,12 @@ function ImagePreview({ imageUrl, filename, onDownload }) {
         {/* Share Button */}
         <button
           onClick={handleShare}
-          className="flex items-center gap-2 px-4 py-2.5 bg-primary text-white text-xs font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+          className="btn-primary"
         >
           <img 
             src="/assets/Link.svg" 
             alt="" 
-            className="w-4 h-4 brightness-0 invert"
+            className="w-3.5 h-3.5 brightness-0 invert"
           />
           {copied ? 'Copied!' : 'Share'}
         </button>
@@ -65,12 +65,12 @@ function ImagePreview({ imageUrl, filename, onDownload }) {
         {/* Download Button */}
         <button
           onClick={handleDownload}
-          className="flex items-center gap-2 px-4 py-2.5 bg-primary text-white text-xs font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+          className="btn-primary"
         >
           <img 
             src="/assets/download.svg" 
             alt="" 
-            className="w-4 h-4 brightness-0 invert"
+            className="w-3.5 h-3.5 brightness-0 invert"
           />
           Download
         </button>
