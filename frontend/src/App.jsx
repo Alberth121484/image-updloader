@@ -1,18 +1,22 @@
+import { useState } from 'react';
 import { ThemeProvider } from './context';
-import { Layout } from './components';
+import { Layout, Dropzone } from './components';
 
 function App() {
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleFileSelect = (file) => {
+    console.log('File selected:', file);
+    setSelectedFile(file);
+  };
+
   return (
     <ThemeProvider>
       <Layout>
-        <div className="text-center">
-          <h1 className="text-2xl font-medium text-text-dark dark:text-text-light">
-            Image Upload App
-          </h1>
-          <p className="text-text-muted mt-2">
-            Dropzone component coming next...
-          </p>
-        </div>
+        <Dropzone 
+          onFileSelect={handleFileSelect}
+          disabled={false}
+        />
       </Layout>
     </ThemeProvider>
   );
