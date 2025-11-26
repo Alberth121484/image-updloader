@@ -2,8 +2,8 @@
 
 A full-stack image upload application built with React and Node.js/Express.
 
-![Light Mode](`<img width="1898" height="917" alt="image" src="https://github.com/user-attachments/assets/17ac1db6-c363-4478-a69f-2cbd8bb5d689" />`)
-![Dark Mode](`<img width="1901" height="917" alt="image" src="https://github.com/user-attachments/assets/87207d9c-d2fd-400f-9b39-5696de21479c" />`)
+![Light Mode](<img width="1898" height="917" alt="image" src="https://github.com/user-attachments/assets/17ac1db6-c363-4478-a69f-2cbd8bb5d689" />)
+![Dark Mode](<img width="1901" height="917" alt="image" src="https://github.com/user-attachments/assets/87207d9c-d2fd-400f-9b39-5696de21479c" />)
 
 ## Features
 
